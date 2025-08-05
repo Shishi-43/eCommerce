@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Project</title>
+    <link rel = "stylesheet" href = "style1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+   
+    <section id="prodetail" class="section-p1">
+    
+        <div class="single-img">
+            <img src="Photos-HCI/chandelier-brown.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="Photos-HCI/chandelier-brown.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Photos-HCI/lamps-brown.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Photos-HCI/pendent-light.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Photos-HCI/led-brown.webp" width="100%" class="small-img" alt="">
+                </div>
+            </div> 
+        </div>
+
+        <div class="single-detail">
+            <h1>LIGHTING</h1>
+            <select>
+                <option>Select Service Type</option>
+                <option>Buy</option>
+                <option>Installation</option>
+                <option>After-Sales Support</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add to cart</button>
+            <h4>Product Detail</h4>
+            <p>
+                We offer a curated collection of premium lighting systems designed to transform your space. Whether you're seeking to buy a statement chandelier, install versatile LED strip lights, add elegant lamps, or incorporate modern pendant lights, we have a solution that blends style with functionality.
+                <br>
+                <span>Our Offering:</span>
+                <br>
+                <span>Chandeliers:</span>
+                Experience the grandeur of our exquisite chandeliers that serve as the centerpiece of any room. Perfect for creating an atmosphere of sophistication and luxury.
+                <br>
+                <span>LED Strip Lights:</span>
+                Illuminate your spaces with energy-efficient LED strip lights. Ideal for accent lighting, these flexible strips add a dynamic and modern touch to any interior.
+                <br>
+                <span>Lamps:</span>
+                Choose from a range of table and floor lamps that not only provide ambient lighting but also complement your décor with timeless elegance.
+                <br>
+                <span>Pendant Lights:</span>
+                Our pendant lights offer a sleek and contemporary design, perfect for kitchens, dining areas, or any space that requires focused lighting and visual appeal.
+            </p>
+        </div>
+   </section>
+
+   <section id="page" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+   </section>
+
+    <section id="newsletter">
+        <div class="newsinfo">
+            <h4>Sign up for Newletters</h4>
+            <p>Get E-mail update about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your E-mail">
+            <button class="white">Sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Tema Community 4 AG23</p>
+            <p><strong>Phone: </strong> +233 201058677/ +233 559056144</p>
+            <p><strong>Hours: </strong>10:00 - 20:00,   Mon - Sat</p>
+            
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Track My Order</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p>@ February 2025, Daniel Owusu Otis - HTML CSS Interior Design Template</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function(){
+            MainImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function(){
+            MainImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function(){
+            MainImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function(){
+            MainImg.src = SmallImg[3].src;
+        }
+   </script>
+
+</body>
+
+
+</html>

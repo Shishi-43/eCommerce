@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0px 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 12px;
+    padding: 10px;
+}
+body{
+    background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+}
+
+#header{
+    background-image: url(Photos-HCI/interior\ background3.webp);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top 25% right;
+    margin-top: 0;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 50px 0;
+    
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar li a button{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    border-style: none;
+    transition: 0.3s ease;
+}
+
+
+.navbar .home{
+    padding: 20px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .about,
+.navbar .explore{
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .favourite,
+.navbar .service{
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: #000;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    /*width: 30%;
+    height: 2px;*/
+    background-color: #000;
+    position: absolute;
+    /*bottom: -4px;
+    left: 20px;*/
+}
+
+#header h3{
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header h3 span{
+    font-family: serif;
+}
+
+#header p{
+    color: #fff;
+    text-align: center;
+}
+
+#header hr{
+    width: 50%;
+    margin: 5px auto;
+}
+
+.intro{
+    margin-top: 80px;
+}
+
+.normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.normal button{
+    padding: 15px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #FFA500;
+    border-style: none;
+    margin-top: 0px;
+}
+.normal button:hover{
+    cursor: pointer;
+}
+
+.label-container {
+    position: relative;
+    width: 600px; /* Adjust to match your image size */
+    margin: auto;
+    text-align: center;
+}
+.label-container span{
+    font-size: 20px;
+  
+}
+
+.furniture-image {
+    margin-top: 10px;
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.label {
+    position: absolute;
+    font-size: 14px;
+    color: #000;
+    font-family: cursive;
+    padding: 5px;
+    width: 250px;
+    text-align: left;
+}
+
+.line {
+    width: 50px; /* Adjust for the line length */
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+}
+
+/* Position each label */
+.label-top-left {
+    top: 10%;
+    left: -200px;
+}
+
+.label-top-left .line {
+    left: 100%;
+    width: 50px;
+}
+
+.label-top-right {
+    top: 10%;
+    right: -180px;
+}
+
+.label-top-right .line {
+    right: 100%;
+    width: 50px;
+}
+
+.label-bottom-left {
+    bottom: 10%;
+    left: -200px;
+}
+
+.label-bottom-left .line {
+    left: 100%;
+    width: 40px;
+}
+
+.label-bottom-right {
+    bottom: 20%;
+    right: -200px;
+}
+
+.label-bottom-right .line {
+    right: 100%;
+    width: 40px;
+}
+/*Explore*/
+
+#product{
+    text-align: center;
+}
+.pro-head{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+
+#product .pro{
+    width: 30%;
+    min-width: 0px;
+    padding: 10px 12px;
+   /*border: 1px solid #cce7d0;*/
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+/*#product .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}*/
+
+#product .pro img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 2rem;
+    object-fit: cover;
+} 
+
+#product .pro .product-des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+/*Newsletter*/
+#newsletter{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* From https://css.glass*/
+    background: linear-gradient(135ddeg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#newsletter .newsinfo{
+    align-items: flex-start;
+    margin: 0 90px;
+}
+#newsletter h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+#newsletter p{
+    font-size: 16px;
+    font-weight: 600;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+    margin: 0 90px;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#newsletter .white{
+    color: #fff;
+    background-color: #088178;
+    padding: 14px;
+    border: 1px solid #088178;
+    white-space: nowrap;
+    border-radius: .3rem;
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo1{
+    width: 60px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+footer h4{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: #000;
+    font-weight: 200;
+}
+
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+
+#prodetail{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetail .single-img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#prodetail .small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+#prodetail .small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetail .single-detail{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetail .single-detail h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetail  .single-detail select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetail .single-detail input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetail .single-detail input:focus{
+    outline: none;
+}
+
+#prodetail .single-detail button{
+    background-color: burlywood;
+    padding: 16px;
+    font-size: 16px;
+    color: #fff;
+    border: bisque;
+    transition: 0.5s;
+}
+
+#prodetail .single-detail button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+.single-detail p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.single-detail span{
+    font-weight: 600;
+    padding: 5px;
+}
+
+
+#page{
+    text-align: center;
+}
+
+#page a{
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#page a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
